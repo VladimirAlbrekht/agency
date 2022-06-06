@@ -1,0 +1,87 @@
+.reviews__wrapper {
+  padding: 117px 20px;
+  max-width: 735px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews__feedback {
+  text-align: center;
+  font-size: 14px;
+  line-height: 31px;
+  letter-spacing: 0.896px;
+  color: #373737;
+  margin-bottom: 30px;
+}
+.reviews__number {
+  margin-bottom: 30px;
+}
+.reviews__contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.reviews__name {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.152px;
+  color: #373737;
+  text-transform: uppercase;
+}
+.reviews__seperator {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.152px;
+  margin: 0 5px;
+  color: #b8b8b8;
+}
+.reviews__category {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.896px;
+  color: #b8b8b8;
+  text-transform: capitalize;
+}
+
+.rating-area {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 24px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(55, 55, 55, 0.257);
+}
+.rating-area:not(:checked) > label:before {
+  content: "\2606";
+}
+.rating-area > input:checked ~ label {
+  color: rgba(55, 55, 55, 1);
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: rgba(55, 55, 55, 1);
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: rgba(55, 55, 55, 1);
+}
+.rate-area > label:active {
+  position: relative;
+}

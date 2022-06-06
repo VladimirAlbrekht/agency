@@ -1,8 +1,14 @@
 /* ПЕРВИЧНЫЕ НАСТРОЙКИ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
 }
 
 ul,
@@ -10,10 +16,21 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Oswald", sans-serif;
 }
 
 a,
 input {
   text-decoration: none;
   border: none;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 1242px;
+  padding: 0 20px;
+  margin: 0 auto;
 }

@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  max-width: 1182px;
+  margin: 0 auto;
+  padding: 75px 20px 0 20px;
+  display: flex;
+
+  justify-content: flex-end;
+}
+.menu {
+  max-width: 503px;
+  width: 100%;
+}
+.menu__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu__item a {
+  font-size: 14px;
+  letter-spacing: 1.94px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #4caf50;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      width: 100%;
+      transition: all 0.5s;
+    }
+  }
+}

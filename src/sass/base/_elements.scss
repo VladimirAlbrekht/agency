@@ -1,0 +1,16 @@
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #252525;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #252525;
+  }
+}
