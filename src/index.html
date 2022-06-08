@@ -4,26 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="сайт информационного агенства">
+    <meta name="keywords" content="агентство, разработка дизайнов, вертска, проектирование">
     <title>Agency</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
+  
   </head>
   <body>
-    <div class="pointer"><div class="menu__item"><a href="#">works</a> </div></div>
     <div class="container">
         <section class="promo">
           <header class="header">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="#">works</a> </li>
-                <li class="menu__item"> <a href="#">about</a> </li>
-                <li class="menu__item"> <a href="#">services</a> </li>
-                <li class="menu__item"> <a href="#">blog</a> </li>
-                <li class="menu__item"> <a href="#">contact</a> </li>
+                <li class="menu__item"><a href="#works">works</a> </li>
+                <li class="menu__item"> <a href="#about">about</a> </li>
+                <li class="menu__item"> <a href="#services">services</a> </li>
+                <li class="menu__item"> <a href="#blog">blog</a> </li>
+                <li class="menu__item"> <a href="#footer">contact</a> </li>
               </ul>
             </nav>
           </header>
-          <div class="wrapper"> 
+          <div class="wrapper promo__wrapper"> 
             <div class="promo__content content_1 promo__content_active">
               <h1 class="promo__title">WHERE GREAT IDEAS COME TO LIFE</h1>
               <p class="promo__discription">
@@ -31,13 +33,13 @@
               </p>
             </div>
             <div class="promo__content content_2">
-              <h1 class="promo__title">HELLO</h1>
+              <h1 class="promo__title">DON'T WAIT, LET'S DO IT TOGETHER</h1>
               <p class="promo__discription">
                 Passionate creative studio helping startups grow their business!
               </p>
             </div>
             <div class="promo__content content_3">
-              <h1 class="promo__title">BYE</h1>
+              <h1 class="promo__title">WE CREATE THE BEST PRODUCTS FOR YOU</h1>
               <p class="promo__discription">
                 Passionate creative studio helping startups grow their business!
               </p>
@@ -50,7 +52,7 @@
           </div>
          
         </section>
-        <section class="about">
+        <section id="about" class="about">
           <div class="wrapper about__wrapper">
             <div class="about__left-item">
               <div class="about__content">
@@ -73,7 +75,7 @@
             </div>
           </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
           <div class="wrapper">
             <h2 class="section__title services__title">Our services</h2>
             <div class="services__wrapper">
@@ -113,11 +115,11 @@
       
           </div>
         </section>
-        <section class="works">
+        <section id="works" class="works">
           <div class="wrapper works__wrapper">
             <div class="works__columns">
               <div class="works__column works__column-left">
-                <h2 class="section__title works__title">Latest works</h2>
+                <h2 id="blog"  class="section__title works__title">Latest works</h2>
                 <ul class="works__catalog">
                   <li class="works__item"><a href="#"> all</a> </li>
                   <li class="works__item"><a href="#"> web design</a></li>
@@ -251,7 +253,7 @@
             </div>
           </div>
         </section>
-        <footer class="footer">
+        <footer id="footer" class="footer">
           <div class="footer__header">
             <div class="footer__item">
               <div class="footer__icon">

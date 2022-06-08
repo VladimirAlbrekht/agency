@@ -1,5 +1,20 @@
 /* АДАПТИВНОСТЬ САЙТА */
+@media (max-width: 1440px) {
+  .header {
+    padding-top: 50px;
+  }
+  .promo {
+    min-height: auto;
+    min-height: 100vh;
+  }
+  .promo__title {
+    font-size: 62px;
+  }
+}
 @media (max-width: 1024px) {
+  .header {
+    margin-bottom: 130px;
+  }
   .about__wrapper {
     display: block;
   }
@@ -20,8 +35,6 @@
     right: 0;
   }
 
-  element.style {
-  }
   .about__right-item .about__discription {
     margin-left: 20px;
   }
@@ -70,6 +83,9 @@
 }
 
 @media (max-width: 991px) {
+  .promo__title {
+    font-size: 54px;
+  }
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -191,6 +207,12 @@
 }
 
 @media (max-width: 575px) {
+  .promo__title {
+    font-size: 36px;
+  }
+  .promo__discription {
+    font-size: 16px;
+  }
   .menu__list {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -202,13 +224,6 @@
   }
   .promo {
     min-height: 100vh;
-  }
-  .promo__content {
-    margin-top: 110px;
-    max-height: 80vh;
-  }
-  .promo__title {
-    font-size: 42px;
   }
 
   .team__wrapper {
@@ -228,8 +243,14 @@
 }
 
 @media (max-width: 425px) {
+  .header {
+    margin-bottom: 80px;
+  }
   .services__item {
     padding: 30px 20px;
+  }
+  .section__title {
+    font-size: 36px;
   }
   .about {
     padding: 50px 0px;
